@@ -1,0 +1,9 @@
+#To build the insertion sort algorithm, you have to change it to operate with a list of objects and use the get attr1 or get attr2 methods to retrieve the objects attributes
+def insertion_sort(objects):
+    for i in range(1, len(objects)):
+        key = objects[i]
+        j = i - 1
+        while j >= 0 and objects[j].get_attr1() > key.get_attr1():
+            objects[j+1] = objects[j]
+            j -= 1
+        objects[j+1] = key
