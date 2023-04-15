@@ -1,0 +1,6 @@
+#You can also modify the linear and binary search algorithms to work with your objects by comparing the attributes with the get attr1 and get attr2 methods. 
+def linear_search(objects, target):
+    for obj in objects:
+        if obj.get_attr1() == target:
+            return obj
+    return None
