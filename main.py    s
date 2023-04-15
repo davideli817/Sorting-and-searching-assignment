@@ -1,0 +1,11 @@
+#things that can be replaceable are 'attr1' and 'attr2' with actual object names so anything
+class MyClass:
+    def __init__(self, attr1, attr2):
+        self.attr1 = attr1
+        self.attr2 = attr2
+    
+    def get_attr1(self):
+        return self.attr1
+    
+    def get_attr2(self):
+        return self.attr2
